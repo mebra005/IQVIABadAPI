@@ -32,6 +32,7 @@ Each time I modify the start date based on the last tweet's date received on the
 The date or stamp has this format:
 
 last tweet's date:  2016-01-14T05:18:02.3479425+00:00
+
 newStartDate :   2016-01-14T05:18:02.9999
 
 Application will remove anything after seconds (3479425+00:00) and append (.9999), this way there wont be any duplicate caused by having same dates.
