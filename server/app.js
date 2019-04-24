@@ -91,3 +91,6 @@ console.log("Getting tweets from API...(it will take few seconds)");
 
 app.get("/", getTweets)
 
+app.listen(3000);
+
+module.exports = app;
