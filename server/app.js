@@ -43,7 +43,7 @@ async function getTweets() {
 
         //modifying the url with the newStartDate
         let nextURL = `${baseURL}?startDate=${nextStartDate}&endDate=${endDate}`;
-        
+
         //Sending the modified request to API to get the next portion of tweets 
         response = await axios.get(nextURL);
 
@@ -53,7 +53,7 @@ async function getTweets() {
       } while (response.data.length == 100);
     }
 
-
+    
     //Test to see if there is any duplicate in the result
     //Duplicate means any tweets with the same ID
     //I'm adding id from allTweets array to uniqueTweets Set to eliminate any duplicate id

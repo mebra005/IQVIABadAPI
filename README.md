@@ -28,7 +28,7 @@ request 3   -   returns 100
 request 4   -   returns 42  
 ```
 
-Each time I modify the start date based on the last tweet's date received on the previous response.
+Each time I modify the start date based on the last tweet's date received on the previous response since the returned tweets are in ascending date and time order.
 The date or stamp has this format:
 
 last tweet's date:  2016-01-14T05:18:02.3479425+00:00
