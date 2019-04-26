@@ -75,7 +75,7 @@ async function getTweets() {
     let file = fs.createWriteStream('tweets.txt');
     file.on('error', function (err) { console.log(err) });
     file.write(`Unique Tweets: ${tweetCounts}\r\nDuplicate tweets: ${duplicateTweets}` + '\r\n\r\n')
-    allTweets.forEach(function (t) { file.write(`id: ${t.id}\r\ntext: ${t.text}\r\nstamp: ${t.stamp}\r\n` + '\r\n'); });
+    allTweets.forEach(function (tweet) { file.write(`id: ${tweet.id}\r\ntext: ${tweet.text}\r\nstamp: ${tweet.stamp}\r\n` + '\r\n'); });
     file.end();
 
 
