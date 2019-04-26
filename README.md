@@ -60,6 +60,15 @@ $ npm install
 $ node app.js
 ```
 
+### How to run with docker
+
+```
+$ git clone https://github.com/mebra005/IQVIABadAPI.git
+$ cd IQVIABadAPI/server
+$ docker build -t iqviaapp .
+$ docker run -p 3000:3000 iqviaapp
+```
+
 ### Authors
 
 * **Milad Ebrahimi** 
