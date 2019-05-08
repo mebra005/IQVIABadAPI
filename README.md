@@ -84,13 +84,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
     /IQVABadAPI
          README.md
          LICENSE
-         Dockerfile
-        .dockerignore
         .gitignore
         /server               
             /node_modules
             app.js
             package.json
             package-lock.json
+            Dockerfile
+            .dockerignore
             tweets.txt
 
